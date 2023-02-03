@@ -1,0 +1,158 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.button-details {
+  background-color: #008cba;
+  border: none;
+  color: white !important;
+  border-radius: 5px;
+  padding: 9px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.button-avisame {
+  background-color: #949494;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 9px 14px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container-2 {
+  width: 500px;
+}
+
+.price {
+  text-align: center !important;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+}
+
+.input-group {
+  margin: 25px;
+  width: 50% !important;
+}
+/* .form-control{
+  text-align: center !important;
+  
+} */
+
+#pluswrap {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+}
+#button-addon1 {
+  text-align: center;
+}
+#pay {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#ticketprice {
+  width: 35% !important;
+}
+
+.title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.team-logo {
+  width: 30px;
+  border: #8c8c8c solid;
+  border-radius: 20px;
+  padding: 3px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.credit-card-logos {
+  margin: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.more-info {
+  font-size: 14px;
+}
+
+.title-img {
+  width: 80px !important;
+  padding: 13px;
+}
+.logo-contenedor {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.logo-radius {
+  border: #8c8c8c solid;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.vs a:link {
+  text-decoration: none;
+  color: black;
+}
+.vs a:hover {
+  color: rgb(52, 52, 52) !important;
+  font-size: 105% !important;
+}
+
+.vs a:visited {
+  color: black !important;
+}
+
+.card {
+  margin: 40px !important;
+}
+
+.form-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .logo-contenedor {
+    margin-left: 0px;
+    justify-content: center;
+  }
+}
+
+.box-no-matches {
+  /* border: 1px solid black; */
+  /* padding: 72px; */
+  margin-top: 61vh;
+  position: fixed;
+  border-radius: 100px;
+  /* background-color: white; */
+  display: flex;
+  color: white;
+}

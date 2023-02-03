@@ -1,0 +1,31 @@
+.title {
+  margin-top: 5px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+.rank {
+  width: 2.5%;
+}
+.qualification {
+  line-height: 10px !important;
+}
+.standings-container {
+  margin: 50px;
+}
+.next-matches {
+  margin-top: 112px;
+}
+
+#team-name-positions {
+  text-decoration: none !important;
+  color: black !important;
+}
+.positions {
+  width: 50%;
+}
+a {
+  text-decoration: none !important;
+}

@@ -1,0 +1,208 @@
+a {
+  text-decoration: none !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: black !important;
+  background-color: #e9ecef !important;
+}
+
+.btn-primary {
+  background-color: #008cba !important;
+  border-color: rgba(0, 0, 0, 0) !important;
+  color: white !important;
+  width: 60% !important;
+  border-radius: 10px !important;
+}
+#login-button {
+  width: 135px !important;
+  border-radius: 4px !important;
+}
+
+.auth-cont {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+/* March details */
+
+/* table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+} */
+
+.contai {
+  width: 350px;
+}
+.vontai {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.equipo1 {
+  /* width: 50%; */
+}
+.equipo2 {
+  /* width: 50%; */
+}
+.fechas {
+  text-align: center;
+}
+.box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.qualification {
+  height: 20px;
+}
+#card-body {
+  display: flex;
+  justify-content: space-between;
+}
+#goals {
+  margin-right: 20px;
+}
+
+.top-section {
+  height: 20vh;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.teamnamedetails {
+  color: black;
+  font-size: 15px !important;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 50px; */
+}
+
+.imgteam {
+  width: 80px !important;
+  border: #8c8c8c solid;
+  border-radius: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.s2s {
+  display: flex;
+  align-items: center;
+}
+
+.middle-section {
+  height: 28vh;
+  background-color: black;
+  border-top: gray 1px solid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.description {
+  color: white;
+}
+
+.formulario2 {
+  display: flex;
+  justify-content: space-between;
+}
+.form-info {
+  width: 350px !important;
+  margin-bottom: 50px;
+  border: 1px solid #9e9e9e !important;
+  border-top: 0px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+  border-radius: 0px !important;
+}
+
+.contenedor-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nomobile {
+  margin: 0px;
+}
+.fullcontainer {
+  margin: 50px;
+}
+
+@media (max-width: 800px) {
+  .formulario2 {
+    display: none;
+  }
+  .middle-section {
+    display: none;
+  }
+  .fullcontainer {
+    display: none;
+  }
+  .purchase-confir {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 800px) {
+  .contenedor-mobile {
+    display: none;
+  }
+  .purchase-confir {
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+}
+
+#form-borders {
+  border: 1px solid #9e9e9e;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 0px;
+}
+
+.contenedordos {
+  margin: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.border-container {
+  display: flex;
+  border: 2px #9e9e9e solid !important ;
+  border-radius: 25px;
+  padding-top: 30px !important;
+  padding-left: 30px !important;
+}
+
+.teamnamedetails2 {
+  font-size: 15px !important;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.second-box {
+  margin-right: 4 vw;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1150px) {
+  .second-box {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .formulario2 {
+    flex-direction: column;
+  }
+}
