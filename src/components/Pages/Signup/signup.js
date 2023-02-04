@@ -1,6 +1,6 @@
-import React, {Component} from "react";
-import {Form, Button, Col} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import React, { Component } from "react";
+import { Form, Button, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "../../Styles/styles.css";
 import AuthService from "../../../services/auth.service";
 
@@ -36,9 +36,9 @@ class SignupPage extends Component {
   };
 
   handleInputChange = (e) => {
-    const {name, value} = e.currentTarget;
+    const { name, value } = e.currentTarget;
 
-    this.setState({[name]: value});
+    this.setState({ [name]: value });
   };
 
   render() {
@@ -51,7 +51,7 @@ class SignupPage extends Component {
           <div className="auth-cont-2">
             <Col>
               <Form onSubmit={this.handleSubmit}>
-                <h2 style={{textAlign: "center"}}> Registrarse</h2>
+                <h2 style={{ textAlign: "center" }}> Registrarse</h2>
                 <hr></hr>
                 <br></br>
                 <br></br>
@@ -103,7 +103,7 @@ class SignupPage extends Component {
                   Registrarse
                 </Button>
                 <p>
-                  <br></br> ¿Ya no eres parte de la comunidad de FootTicket?
+                  <br></br> ¿Ya eres parte de la comunidad de FootTicket?
                   <br></br>
                 </p>
                 <p>
