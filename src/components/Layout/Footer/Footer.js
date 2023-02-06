@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "../../../assets/ft-logo.png";
 import "./Footer.css";
 import {
@@ -12,14 +12,19 @@ import {
 
 function Footer() {
   return (
-    <footer class="footer-distributed">
-      <div class="footer-left">
+    <footer className="footer-distributed">
+      <div className="footer-left">
         <h3>
-          <img src={Logo} alt="logo" className="logo" style={{width: "35px"}} />
+          <img
+            src={Logo}
+            alt="logo"
+            className="logo"
+            style={{ width: "35px" }}
+          />
           Foo<span>Ticket</span>
         </h3>
 
-        <p class="footer-links">
+        <p className="footer-links">
           <Link as={Link} to="/login">
             Iniciar Sesion
           </Link>
@@ -41,10 +46,10 @@ function Footer() {
           </Link>
         </p>
 
-        <p class="footer-company-name">Footicket © 2022</p>
+        <p className="footer-company-name">Footicket © 2022</p>
       </div>
 
-      <div class="footer-center">
+      <div className="footer-center">
         <div>
           <p>
             <span>Pl. de Legazpi, 8 </span> 28045, Madrid
@@ -62,15 +67,15 @@ function Footer() {
         </div>
       </div>
 
-      <div class="footer-right">
-        <p class="footer-company-about">
+      <div className="footer-right">
+        <p className="footer-company-about">
           <span>Sobre nosotros</span>
           Footicket es una aplicación que simula la compra y venta de entradas
           en las principales ligas del mundo. El club elije el precio y la
           cantidad de entradas que decide poner a la venta
         </p>
 
-        <div class="footer-icons">
+        <div className="footer-icons">
           <Link as={Link} to="#">
             <FaFacebookF />
           </Link>

@@ -1,6 +1,6 @@
 import APIHandler from "../../../services/api.service";
-import {useParams} from "react-router";
-import {useState, useEffect} from "react";
+import { useParams } from "react-router";
+import { useState, useEffect } from "react";
 import NextMatches from "./NextMatches/NextMatches";
 import Positions from "./Positions/Positions";
 import "./Standing.css";
@@ -10,7 +10,7 @@ const footballAPI = new APIHandler();
 
 function Standings() {
   const [nextMatchList, setNextMatchList] = useState([]);
-  const {country} = useParams();
+  const { country } = useParams();
 
   useEffect(() => {
     footballAPI

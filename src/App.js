@@ -1,6 +1,6 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import "./App.css";
-import {Switch, Route} from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import NavBar from "./components/Layout/Navigation/NavBar";
 import SignupPage from "./components/Pages/Signup/signup";
 import AuthService from "./services/auth.service";
@@ -35,7 +35,7 @@ class App extends Component {
   }
 
   storeUser = (user) => {
-    this.setState({loggedUser: user});
+    this.setState({ loggedUser: user });
   };
 
   render() {
