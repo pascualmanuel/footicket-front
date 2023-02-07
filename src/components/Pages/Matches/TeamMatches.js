@@ -50,8 +50,9 @@ function TeamMatches() {
             </p>
           </div>
         </div> */}
-        {/* <SearchBar mandando={`No se han encontrado partidos para: ${teamName}`}/> */}
-        hola
+        <SearchBar
+          mandando={`No se han encontrado partidos para: ${teamName}`}
+        />
       </>
     );
   }

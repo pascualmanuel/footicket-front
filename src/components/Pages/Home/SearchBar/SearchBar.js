@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import TodayMatches from "../TodayMatches";
 import "./SearchBar.css";
 
-function SearchBar() {
+function SearchBar(props) {
   const [teamName, setTeamName] = useState("");
 
   const handleChange = (e) => {
@@ -20,6 +20,7 @@ function SearchBar() {
     "River Plate",
     "Barcelona",
     "Juventus",
+    "Liverpool",
   ];
   const [newName, setnewName] = useState("Real Madrid");
 
@@ -39,7 +40,7 @@ function SearchBar() {
           <fieldset>
             <legend>
               <strong>
-                FooTicket <br></br> ¡Busca tu equipo y comprá tu entrada!
+                FooTicket <br></br> ¡Buscá tu equipo y comprá tu entrada!
               </strong>
             </legend>
             <div className="inner-form">
@@ -73,7 +74,7 @@ function SearchBar() {
             </div>
           </fieldset>
           <br></br>
-          {/* <h5 style={{ color: "white" }}>{props.mandando}</h5> */}
+          <h5 style={{ color: "white" }}>{props.mandando}</h5>
           {/* <TodayMatches /> */}
 
           <Link to={`/league/champions`}>
