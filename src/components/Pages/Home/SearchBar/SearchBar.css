@@ -26,7 +26,7 @@ h2 {
   -ms-flex-align: center;
   align-items: center;
   /* font-family: "Poppins", sans-serif; */
-  background: url("../../..//../assets/background.webp");
+  background: url("../../..//../assets/background.jpeg");
   /* background: url("https://i.pinimg.com/originals/a0/8b/13/a08b134d449634e94d0dc7b3e729cbb9.jpg"); */
 
   background-size: cover;
@@ -334,9 +334,9 @@ html {
 }
 .button-50:hover {
   text-decoration: none;
-  background-color: #0f0b83;
+  background-color: #0c1d3d;
   transition: 1s;
-  border-color: #0f0b83;
+  border-color: #0c1d3d;
 }
 .button-50:active {
   box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;

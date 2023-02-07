@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { Link } from "react-router-dom";
 import TodayMatches from "../TodayMatches";
 import "./SearchBar.css";
 
-function SearchBar() {
+function SearchBar(props) {
   const [teamName, setTeamName] = useState("");
 
   const handleChange = (e) => {
@@ -14,13 +14,33 @@ function SearchBar() {
     e.preventDefault();
   };
 
+  const names = [
+    "Real Madrid",
+    "Manchester City",
+    "River Plate",
+    "Barcelona",
+    "Juventus",
+  ];
+  const [newName, setnewName] = useState("Real Madrid");
+
+  const shuffle = useCallback(() => {
+    const index = Math.floor(Math.random() * names.length);
+    setnewName(names[index]);
+  }, []);
+
+  useEffect(() => {
+    const intervalID = setInterval(shuffle, 1600);
+    return () => clearInterval(intervalID);
+  }, [shuffle]);
   return (
     <>
       <div className="s006">
         <form onSubmit={handleSubmit}>
           <fieldset>
             <legend>
-              <strong>Buscá tu entrada por Equipo</strong>
+              <strong>
+                FooTicket <br></br> ¡Busca tu equipo y comprá tu entrada!
+              </strong>
             </legend>
             <div className="inner-form">
               <div className="input-field">
@@ -44,7 +64,7 @@ function SearchBar() {
                 <input
                   id="search"
                   type="text"
-                  placeholder="Real Madrid"
+                  placeholder={newName}
                   name="teamName"
                   value={teamName}
                   onChange={handleChange}
@@ -53,12 +73,12 @@ function SearchBar() {
             </div>
           </fieldset>
           <br></br>
-
+          <h5 style={{ color: "white" }}>{props.mandando}</h5>
           {/* <TodayMatches /> */}
 
           <Link to={`/league/champions`}>
             <div className="button-50" role="button">
-              Champions League 2022
+              Champions League 22/23
             </div>
           </Link>
         </form>

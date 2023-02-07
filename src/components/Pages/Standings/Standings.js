@@ -17,7 +17,7 @@ function Standings() {
       .getNextMatches(country)
       .then((res) => {
         setNextMatchList(res.data);
-        console.log(country, "hola soy res.dalistta");
+        // console.log(country, "hola soy res.dalistta");
       })
 
       .catch((err) => console.log(err));

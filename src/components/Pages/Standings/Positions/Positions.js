@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 // import Example from "../../Offcanvas/Example";
 
 const footballAPI = new APIHandler();
+
 function Positions() {
   const [matchList, setMatchList] = useState([]);
   const [leagueList, setLeagueList] = useState([]);
@@ -35,6 +36,7 @@ function Positions() {
   console.log(leagueList.name, "leagueList.name");
 
   // console.log(matchList, "prueba");
+  let hola = matchList.length;
 
   return matchList.length === 0 ? (
     <Spinner animation="border" role="status" id="pluswrap">
