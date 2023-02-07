@@ -24,7 +24,6 @@ function Positions() {
   } else {
     number = 0;
   }
-  console.log(number, "soy number");
 
   var qualification;
   if (country === "argentina") {
@@ -37,7 +36,7 @@ function Positions() {
     footballAPI
       .getPositions(country)
       .then((res) => {
-        setMatchList(res.data[0].league.standings[0]);
+        setMatchList(res.data[0].league.standings[number]);
       })
       .catch((err) => console.log(err));
   }, [country]);
