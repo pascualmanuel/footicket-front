@@ -15,6 +15,24 @@ function Positions() {
 
   const { country } = useParams();
 
+  let currentDate = new Date().toJSON().slice(5, 7);
+
+  var number;
+
+  if ((country === "argentina") & (currentDate <= 8)) {
+    number = 1;
+  } else {
+    number = 0;
+  }
+  console.log(number, "soy number");
+
+  var qualification;
+  if (country === "argentina") {
+    qualification = "noquali";
+  } else {
+    qualification = "qualification";
+  }
+
   useEffect(() => {
     footballAPI
       .getPositions(country)
@@ -113,19 +131,19 @@ function Positions() {
             );
           })}
 
-          <tr className="qualification">
+          <tr className={qualification}>
             <td style={{ backgroundColor: "#007d01ad" }}></td>
             <td colSpan={7}>Champions League</td>
           </tr>
-          <tr className="qualification">
+          <tr className={qualification}>
             <td style={{ backgroundColor: "#fdff007a" }}></td>
             <td colSpan={7}>Europa League</td>
           </tr>
-          <tr className="qualification">
+          <tr className={qualification}>
             <td style={{ backgroundColor: "#fea50070" }}></td>
             <td colSpan={7}>Europa Conference</td>
           </tr>
-          <tr className="qualification">
+          <tr className={qualification}>
             <td style={{ backgroundColor: "#ff02008f" }}></td>
             <td colSpan={7}>Descenso</td>
           </tr>

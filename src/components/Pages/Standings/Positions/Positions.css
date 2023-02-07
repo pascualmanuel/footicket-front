@@ -30,6 +30,10 @@ a {
   text-decoration: none !important;
 }
 
+.noquali {
+  display: none;
+}
+
 @media (max-width: 580px) {
   .positions-results {
     display: none;
