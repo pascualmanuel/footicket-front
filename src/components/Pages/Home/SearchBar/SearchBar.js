@@ -56,11 +56,11 @@ function SearchBar() {
 
           {/* <TodayMatches /> */}
 
-          {/* <Link to={`/league/wc`}>
+          <Link to={`/league/champions`}>
             <div className="button-50" role="button">
-              2022 Fifa World Cup
+              Champions League 2022
             </div>
-          </Link> */}
+          </Link>
         </form>
       </div>
     </>

@@ -4,7 +4,9 @@ class APIHandler {
   constructor() {
     //Tabla de Posiciones
     this.axiosApp = axios.create({
-      baseURL: "https://footicket-api.onrender.com/api",
+      baseURL:
+        "https://footicket-api.onrender.com/api" ||
+        process.env.REACT_APP_BASE_URL,
 
       withCredentials: true,
     });

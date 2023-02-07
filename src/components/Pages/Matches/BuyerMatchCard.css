@@ -131,6 +131,7 @@
 
 .card {
   margin: 40px !important;
+  border-radius: 23px !important;
 }
 
 .form-center {
