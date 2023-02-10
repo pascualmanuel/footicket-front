@@ -32,6 +32,9 @@ class APIHandler {
     this.axiosApp.get(`/matches/standings/${country}`);
   getNextMatches = (country) =>
     this.axiosApp.get(`/matches/next-matches/${country}`);
+
+  getNextMatch = (teamId) => this.axiosApp.get(`/matches/next-match/${teamId}`);
+
   getLeagueInfo = (country) =>
     this.axiosApp.get(`/matches/league-info/${country}`);
   getTeamInfo = (name) => this.axiosApp.get(`/matches/team-info/${name}`);
