@@ -22,8 +22,6 @@
   }
 }
 
-
-
 .title {
   margin-top: 5px;
 }
@@ -65,4 +63,11 @@ a {
   .positions-results {
     display: none;
   }
+}
+.positions {
+  width: 50%;
+}
+
+.leaguelist-title {
+  text-align: left;
 }

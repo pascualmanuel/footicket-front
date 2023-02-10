@@ -89,7 +89,7 @@ function Standings(props) {
     <>
       <div className="standings-container">
         <div className="positions">
-          <h2 className="leaguelist-title" style={{ marginTop: "-22px" }}>
+          <h2 className="leaguelist-title">
             <img
               src={
                 leagueList.name === "Liga Profesional Argentina"
@@ -101,7 +101,7 @@ function Standings(props) {
             />
             {leagueList.name === "Liga Profesional Argentina"
               ? "LPF Argentina"
-              : leagueList.neme}
+              : leagueList.name}
           </h2>
           <br></br>
           <Table className="tabla-posiciones" bordered hover="sm">
@@ -202,7 +202,9 @@ function Standings(props) {
             </tbody>
           </Table>
           <div>
-            <h4>Partido destacado de la semana</h4>
+            <h4 style={{ marginTop: "40px" }}>
+              Partido destacado de la semana
+            </h4>
             {nextMatch.map((match) => {
               return <BuyerMatchCard match={match} />;
             })}
