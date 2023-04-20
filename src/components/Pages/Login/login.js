@@ -13,6 +13,7 @@ class LoginPage extends Component {
     this.state = {
       username: "",
       password: "",
+      error: null,
     };
 
     this.authService = new AuthService();
@@ -27,10 +28,12 @@ class LoginPage extends Component {
         this.props.storeUser(response.data);
         this.props.history.push("/");
       })
-
-      .catch((err) =>
-        console.log(err.response.data.message, "yo soy el error!!")
-      );
+      .catch((err) => {
+        console.log(err.response.data);
+        this.setState({
+          error: "El nombre de usuario o contraseña son incorrectos",
+        });
+      });
   };
 
   handleInputChange = (e) => {
@@ -73,7 +76,13 @@ class LoginPage extends Component {
                     type="password"
                     placeholder="*******"
                   />
+                  <br />
+
+                  {this.state.error && (
+                    <p style={{ color: "red" }}>{this.state.error}</p>
+                  )}
                 </Form.Group>
+
                 <Button id="login-button" type="submit">
                   Iniciar Sesión
                 </Button>
