@@ -108,7 +108,7 @@ class SignupPage extends Component {
                 </p>
                 <p>
                   <Link as={Link} to="/login">
-                    Login
+                    Iniciar Sesión
                   </Link>
                 </p>
               </Form>

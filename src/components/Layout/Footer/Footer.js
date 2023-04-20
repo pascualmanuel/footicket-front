@@ -26,7 +26,7 @@ function Footer() {
 
         <p className="footer-links">
           <Link as={Link} to="/login">
-            Iniciar Sesion
+            Iniciar Sesión
           </Link>
 
           <Link as={Link} to="/signup">

@@ -51,7 +51,7 @@ const Navigation = ({loggedUser, storeUser}) => {
               {!loggedUser ? (
                 <>
                   <NavDropdown.Item as={Link} to="/login">
-                    Iniciar Sesion
+                    Iniciar Sesión
                   </NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/signup">
                     Registro
@@ -81,7 +81,7 @@ const Navigation = ({loggedUser, storeUser}) => {
                   )}
                   <NavDropdown.Divider />
                   <NavDropdown.Item as={Link} onClick={logout} to="/">
-                    Cerrar Sesion
+                    Cerrar Sesión
                   </NavDropdown.Item>
                 </>
               )}
